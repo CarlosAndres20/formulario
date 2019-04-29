@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <style>
+  .letra{
+    font-size: 30px;
+  }
+  </style>
+  <body>
+      <div class="container">
+          <div class="row ">
+              <div class="col " >
+                    <h1  style="text-align:center; background: #ac0f0f; font-size: 40px;color: white; padding: 2%">Empresa S.A.S.</h1>
+                     
+              </div>
+              </div>
+        <div class="row">
+          <div class="col">
+              <ul class="nav nav-tabs nav " style="background:#4487ff; color:white; padding: 10px;font-size: 26px; display: none;">
+                <li class="nav-item">
+                  <a href="Conversor.html" class="nav-link active text-color-white" style="color:white;">Conversor</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="background:#4487ff; color:white; padding: 10px;font-size: 26px;" >Perfil</a>
+                  <div class="dropdown-menu" style="background:#4487ff;color:white;  padding: 5px;font-size: 19px;">
+                    <a class="dropdown-item " href="#" style="background:#4487ff;color:white;">Datos Personales</a>
+                    <a class="dropdown-item" href="#">Cambiar Datos</a>
+                    <div class="dropdown-divider"></div>
+                  </div>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <!-- Button trigger modal  -->
+          <div class="row">
+          <div class="col">
+                <form action="">
+                        <div class="form-group">
+                          <label for="" class="lead letra">
+                            Nombre
+                          </label>
+                          <input type="text" name="nombre" id="Nombre" class="form-control" placeholder="Ingrese su nombre" aria-describedby="helpId" style="border-bottom: 3px solid rgb(11, 7, 255); font-size: 28px;" >
+                          <small id="helpId" class="text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="lead letra">Contraseña</label>
+                          <input type="password" name="Contraseña" id="password" class="form-control" placeholder="Ingrese su contraseña" aria-describedby="helpId" style=" font-size: 28px; border-bottom: 3px solid rgb(11, 7, 255);">
+                          <small id="helpId" class="text-muted"></small>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg" style="margin-left:46%;" onsubmit="nombre(this.value)" >Ingresar</button>
+                </form>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col ">
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId"style="margin-left:45.8%; margin-top:1%;">
+                Registrar
+              </button>
+              <div class="collapse" id="contentId">
+                        
+              </div>
+                <!-- Modal -->
+              <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary ">
+                          <h5 class="modal-title " style="font-size: 32px;text-align:center;">Registro</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                                    
+                    </div>
+                        <div class="modal-body">
+                          <form action="#" id="formRegister" onsubmit="">
+                            <div class="form-group">
+                              <label for="" id="valUsuario">
+                                  <small id="helpId" class="h1 Mensaje" style="display:none; font-size: 23px;">Campo Obligatorio</small>
+                                  <span></span>
+                              </label>
+                              <input type="text" name="usuario" id="Usuario" class="form-control valida" placeholder="Ingrese su nombre" aria-describedby="helpId" style="border-bottom: 3px solid rgb(11, 7, 255); font-size: 28px;" onmousemove="dentro(this.value)">
+                              
+                            </div>
+                            <div class="form-group">
+                            <label for=""></label>
+                                <input type="password" name="Contraseña" id="password" class="form-control valida" placeholder="Ingrese su contraseña" aria-describedby="helpId" style=" font-size: 28px; border-bottom: 3px solid  rgb(11, 7, 255);" >
+                                <small id="helpId" class="text-muted Mensaje"></small>
+                            </div>
+                                            <div class="form-group">
+                                                  <label for=""></label>
+                                                  <input type="date" name="fecha" id="date" class="form-control valida" placeholder="Ingrese su contraseña" aria-describedby="helpId" style="border-bottom: 3px solid rgb(11, 7, 255); font-size: 28px;" >
+                                                  <small id="helpId" class="text-muted Mensaje" ></small>
+                                              </div>
+                                          <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input type="checkbox" class="form-check-input" name="Artes" id="Art" value="checkedValue" >
+                                              Artes
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input type="checkbox" class="form-check-input Opcion" name="Tecnologia" id="Tecnology" value="checkedValue" >
+                                              Tecnologia
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input type="checkbox" class="form-check-input Opcion" name="Musica" id="Music" value="checkedValue" >
+                                              Musica
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input type="checkbox" class="form-check-input Opcion" name="Juego" id="Play" value="checkedValue" >
+                                              Juegos
+                                            </label>
+                                          </div>
+                                      <div class="form-check my-3">
+                                        <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input Opcion1" name="Acepta" id="Aceptar" value="checkedValue" >
+                                          <a href="#">Acepta Terminos y Condiciones</a>
+                                        </label>
+                                        <small id="helpId" class="text-muted"></small>
+                                      </div>
+                                      <label id="labelEnviar"></label>
+                                      <button type="submit" class="btn  my-3 btn-pills text-white p-2" style="background: #ac0f0f;margin-left: 46.5%;">Enviar</button>
+                                          </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          <!-- <p>
+              <a class="btn btn-primary" data-toggle="collapse" href="#contentId" aria-expanded="false" aria-controls="contentId">
+                  Registrar
+              </a>
+          </p>  -->
+         
+          </div>
+        </div>
+        <div class="row ">
+            <div class="col " style="margin:15%;">
+                <form action="">
+                    <div class="form-group">
+                      <label for="">Su nombre es </label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                      <small id="helpId" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                      <label for="">Su Contraseña es </label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                      <small id="helpId" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                      <label for="">Su Fecha es </label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                      <small id="helpId" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                      <label for="">Gustos </label>
+                      <textarea name="" id="" cols="30" rows="10"></textarea>
+                      <!-- <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder=""> -->
+                      <small id="helpId" class="form-text text-muted"></small>
+                    </div>
+                    <a name="" id="" class="btn btn-primary" href="Conversor.html" role="button">Conversor</a>
+                </form>
+            </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/validando.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="nav nav-tabs nav " style="background:#4487ff; color:white; padding: 10px;font-size: 26px;">
+            <li class="nav-item">
+              <a href="Conversor.html" class="nav-link active text-color-white" style="color:white;">Conversor</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="background:#4487ff; color:white; padding: 10px;font-size: 26px;" >Perfil</a>
+              <div class="dropdown-menu" style="background:#4487ff;color:white;  padding: 5px;font-size: 19px;">
+                <a class="dropdown-item " href="#" style="background:#4487ff;color:white;">Datos Personales</a>
+                <a class="dropdown-item" href="#">Cambiar Datos</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link disabled" style="color:white;">Salir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <div class="row">
+            <div class="col">
+              <h1 class="h1 " >Conversor de moneda</h1>
+                <div class="form-group">
+                <p>
+                  <label for="" class="h1 bg-dark">Peso Colombiano a Dolares</label>
+                  <input type="number" name="" id="dolar" class="form-control" placeholder="Ingrese el valor en PesoColombiano" aria-describedby="helpId" oninput="valorDolar(this.value)" onchange="valorDolar(this.value)">
+                  <small id="helpId" class="text-muted"></small>
+                </p>
+                <p>
+                   <label for="" class="h1 bg-dark">Peso Colombiano a Euros</label>
+                  <input type="number" name="" id="euro" class="form-control" placeholder="Ingrese el valor en PesoColombiano" aria-describedby="helpId" oninput="valorEuro(this.value)" onchange="valorEuro(this.value)">
+                  <small id="helpId" class="text-muted"></small> 
+                </p>
+                <p>
+                  <h1>Valor en Euros</h1>
+                   <label for="" class="h1 bg-dark" id="EnviarEuro">
+                     <small id="helpId" class="text-muted"></small></label>
+                   
+                </p>
+                <p>
+                    <h1>Valor en Dolares</h1>
+                     <label for="" class="h1 bg-dark" id="EnviarDolar">
+                       <small id="helpId" class="text-muted"></small></label>                     
+                  </p>
+                </div>
+            </div>
+          </div>
+        
+          <div class=".row bg-success " style="padding: 6%;">
+            <footer>
+              <div class="col col-6">
+              Elaborado por Carlos Andres Mariño Fuentes 
+              </div>
+              <div class="col col-6 col.justify-content-end">
+                <img src="img/vivelab.png" alt="vivelab" height="40px;">
+              </div>
+            </footer>
+          </div>
+    </div>
+    <script src="js/conversor.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.js" ></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
